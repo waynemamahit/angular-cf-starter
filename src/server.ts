@@ -1,34 +1,8 @@
 import { AngularAppEngine, createRequestHandler } from '@angular/ssr';
-import { Hono } from 'hono';
-import { cors } from 'hono/cors';
-import { csrf } from 'hono/csrf';
-import { secureHeaders } from 'hono/secure-headers';
-import { logger } from 'hono/logger';
-
-type Bindings = {
-  MY_VARIABLE: string;
-};
-
-const app = new Hono<{ Bindings: Bindings }>();
+import app from './server/app';
+import { Counter } from './server/durable-objects/counter.do';
 
 const angularApp = new AngularAppEngine();
-
-// Logger middleware - logs all requests
-app.use('*', logger());
-
-// Secure Headers middleware - adds security headers
-app.use('*', secureHeaders());
-
-// CORS middleware - configure allowed origins
-app.use('*', cors());
-
-// CSRF Protection middleware - protect against CSRF attacks
-app.use('*', csrf());
-
-// API routes example
-app.get('/api/health', (c) => {
-  return c.json({ status: 'ok', timestamp: new Date().toISOString() });
-});
 
 // Angular SSR handler - handle all other routes
 app.all('*', async (c) => {
@@ -54,3 +28,5 @@ export const reqHandler = createRequestHandler(async (req) => {
 export default {
   fetch: app.fetch,
 };
+
+export { Counter }
