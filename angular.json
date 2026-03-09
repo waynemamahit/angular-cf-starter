@@ -33,7 +33,8 @@
               "experimentalPlatform": "neutral"
             },
             "outputPath": "dist",
-            "externalDependencies": ["cloudflare:workers"]
+            "externalDependencies": ["cloudflare:workers"],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -59,7 +60,7 @@
           },
           "defaultConfiguration": "production"
         },
-        "preview": {  
+        "preview": {
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
@@ -80,11 +81,9 @@
             "outputPath": "dist",
             "externalDependencies": ["cloudflare:workers"],
             "security": {
-              "allowedHosts": [
-                "localhost",
-                "127.0.0.1"
-              ]
-            }
+              "allowedHosts": ["localhost", "127.0.0.1"]
+            },
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
