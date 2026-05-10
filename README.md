@@ -11,8 +11,8 @@ A production-ready full-stack starter template built on **Angular 21** with **Cl
 - **Angular 21+** — Standalone components, signals, `input()`/`output()`, `OnPush` change detection, SSR
 - **Angular Router** — Lazy-loaded routes, guards, resolvers
 - **Angular Forms** — Reactive forms with signals
-- **TypeScript 5.9+** — Strict type safety, **no `any` type allowed**
-- **TailwindCSS 4.2+** — Utility-first CSS with mobile-first responsive design
+- **TypeScript 6.0+** — Strict type safety, **no `any` type allowed**
+- **TailwindCSS 4.3+** — Utility-first CSS with mobile-first responsive design
 - **Semantic HTML & ARIA** — AXE-compliant accessibility, skip links, keyboard nav, focus management
 - **DaisyUI 5.5+** — UI components with customizable themes (default: **light**)
 - **Lucide Angular** — Icon library (`lucide-angular`)
@@ -95,7 +95,7 @@ Before starting, ensure you have the following installed:
 | **Node.js**      | 24+ LTS | JavaScript runtime              |
 | **PNPM**         | 10+     | Package manager                 |
 | **Docker**       | Latest  | Local PostgreSQL for Hyperdrive |
-| **Wrangler CLI** | 4.71+   | Cloudflare deployments          |
+| **Wrangler CLI** | 4.90+   | Cloudflare deployments          |
 | **Git**          | Latest  | Version control                 |
 
 ### Install Global Tools
@@ -130,7 +130,7 @@ pnpm install
 
 This installs all project dependencies including:
 
-- Angular 21, TypeScript 5.9+
+- Angular 21, TypeScript 6.0+
 - TailwindCSS 4+, DaisyUI, Lucide Angular
 - Hono, Drizzle ORM, Zod
 - Vitest, Playwright

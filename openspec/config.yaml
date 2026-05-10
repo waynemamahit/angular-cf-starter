@@ -26,7 +26,7 @@ context: |
   | --------------------- | ------------- | -------- | -------------------------------------------- |
   | **Runtime**           | Node.js       | 24+ LTS  | JavaScript runtime                           |
   | **Package Manager**   | PNPM          | 10+      | Fast, efficient dependency management        |
-  | **Language**          | TypeScript    | 5.9+     | Type safety, **no `any` type allowed**       |
+  | **Language**          | TypeScript    | 6.0+     | Type safety, **no `any` type allowed**       |
   | **Linting**           | ESLint        | 10+      | Code quality and Angular-specific rules      |
   | **Formatting**        | Prettier      | 3.8+     | Consistent code formatting                   |
   | **Build Tool**        | Angular CLI   | 21+      | Build, serve, and test with `@angular/build` |
@@ -38,18 +38,18 @@ context: |
   | **Angular**               | 21+      | Standalone components, signals, `input()`/`output()`, `OnPush`, SSR ([docs](https://angular.dev)) |
   | **Angular Router**        | 21+      | Lazy-loaded routes, guards, resolvers ([testing](https://angular.dev/guide/routing/testing#best-practices-for-router-testing), [resolvers](https://angular.dev/guide/routing/data-resolvers#best-practices)) |
   | **Angular Forms**         | 21+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
-  | **TailwindCSS**           | 4.2+     | Utility-first CSS with mobile-first responsive design          |
+  | **TailwindCSS**           | 4.3+     | Utility-first CSS with mobile-first responsive design          |
   | **DaisyUI**               | 5.5+     | UI components with customizable themes (default: **light**)    |
-  | **Lucide Angular**        | 0.577+   | `lucide-angular` for UI icons                                  |
+  | **Lucide Angular**        | 1.0+     | `lucide-angular` for UI icons                                  |
   | **angular-i18next**       | 20+      | Frontend internationalization ([i18n ref](https://angular.dev/guide/i18n)) |
-  | **i18next**               | 25+      | Core i18n library shared with backend                          |
+  | **i18next**               | 26+      | Core i18n library shared with backend                          |
 
   ### Backend
 
   | Technology                | Version  | Purpose                                                        |
   | ------------------------- | -------- | -------------------------------------------------------------- |
   | **Hono**                  | 4.12+    | Fast, edge-native API framework with SOLID principles          |
-  | **i18next**               | 25+      | Backend internationalization with Hono integration             |
+  | **i18next**               | 26+      | Backend internationalization with Hono integration             |
   | **Drizzle ORM**           | 0.45+    | Type-safe database with migrations (separate D1 + Hyperdrive)  |
   | **Zod**                   | 4+       | Runtime schema validation (shared frontend + backend)          |
   | **Awilix**                | 13+      | Dependency injection container (backend only)                  |
@@ -62,8 +62,8 @@ context: |
   | **Vitest**                    | 4.0+     | Built-in Angular unit/integration testing via `@angular/build:unit-test` |
   | **@vitest/browser-playwright**| 4.0+     | Browser-based component testing provider                     |
   | **@vitest/coverage-v8**       | 4.0+     | Coverage provider with 90% threshold enforcement             |
-  | **Playwright**                | 1.58+    | End-to-end testing across browsers                           |
-  | **jsdom**                     | 28+      | DOM environment for Vitest tests                             |
+  | **Playwright**                | 1.59+    | End-to-end testing across browsers                           |
+  | **jsdom**                     | 29+      | DOM environment for Vitest tests                             |
 
   ### Cloudflare Services
 
@@ -84,7 +84,7 @@ context: |
   | Technology                     | Purpose                                           |
   | ------------------------------ | ------------------------------------------------- |
   | **Docker Compose**             | Local PostgreSQL for Hyperdrive development       |
-  | **Wrangler**                   | 4.71+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
+  | **Wrangler**                   | 4.90+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
   | **Angular SSR**                | `@angular/ssr` with `AngularAppEngine` on Cloudflare Workers |
 
   ---
