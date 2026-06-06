@@ -29,4 +29,5 @@ export default {
   fetch: app.fetch,
 };
 
-export { Counter }
+export { Counter };
+

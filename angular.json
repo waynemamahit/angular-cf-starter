@@ -30,7 +30,7 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts",
-              "experimentalPlatform": "neutral"
+              "platform": "neutral"
             },
             "outputPath": "dist",
             "externalDependencies": ["cloudflare:workers"],
@@ -76,7 +76,7 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts",
-              "experimentalPlatform": "neutral"
+              "platform": "neutral"
             },
             "outputPath": "dist",
             "externalDependencies": ["cloudflare:workers"],

@@ -5,7 +5,7 @@ context: |
 
   ## Purpose
 
-  A production-ready full-stack starter template built on **Angular 21** with **Cloudflare Workers**. This project provides a scalable foundation for building modern web applications with SSR, comprehensive Cloudflare service integrations, clean architecture following SOLID principles, and specification-driven development with OpenSpec.
+  A production-ready full-stack starter template built on **Angular 22** with **Cloudflare Workers**. This project provides a scalable foundation for building modern web applications with SSR, comprehensive Cloudflare service integrations, clean architecture following SOLID principles, and specification-driven development with OpenSpec.
 
   **Goals:**
 
@@ -25,19 +25,19 @@ context: |
   | Category              | Technology    | Version  | Purpose                                      |
   | --------------------- | ------------- | -------- | -------------------------------------------- |
   | **Runtime**           | Node.js       | 24+ LTS  | JavaScript runtime                           |
-  | **Package Manager**   | PNPM          | 10+      | Fast, efficient dependency management        |
+  | **Package Manager**   | PNPM          | 11+      | Fast, efficient dependency management        |
   | **Language**          | TypeScript    | 6.0+     | Type safety, **no `any` type allowed**       |
   | **Linting**           | ESLint        | 10+      | Code quality and Angular-specific rules      |
   | **Formatting**        | Prettier      | 3.8+     | Consistent code formatting                   |
-  | **Build Tool**        | Angular CLI   | 21+      | Build, serve, and test with `@angular/build` |
+  | **Build Tool**        | Angular CLI   | 22+      | Build, serve, and test with `@angular/build` |
 
   ### Frontend
 
   | Technology                | Version  | Purpose                                                        |
   | ------------------------- | -------- | -------------------------------------------------------------- |
-  | **Angular**               | 21+      | Standalone components, signals, `input()`/`output()`, `OnPush`, SSR ([docs](https://angular.dev)) |
-  | **Angular Router**        | 21+      | Lazy-loaded routes, guards, resolvers ([testing](https://angular.dev/guide/routing/testing#best-practices-for-router-testing), [resolvers](https://angular.dev/guide/routing/data-resolvers#best-practices)) |
-  | **Angular Forms**         | 21+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
+  | **Angular**               | 22+      | Standalone components, signals, `input()`/`output()`, `OnPush`, SSR ([docs](https://angular.dev)) |
+  | **Angular Router**        | 22+      | Lazy-loaded routes, guards, resolvers ([testing](https://angular.dev/guide/routing/testing#best-practices-for-router-testing), [resolvers](https://angular.dev/guide/routing/data-resolvers#best-practices)) |
+  | **Angular Forms**         | 22+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
   | **TailwindCSS**           | 4.3+     | Utility-first CSS with mobile-first responsive design          |
   | **DaisyUI**               | 5.5+     | UI components with customizable themes (default: **light**)    |
   | **Lucide Angular**        | 1.0+     | `lucide-angular` for UI icons                                  |
@@ -84,7 +84,7 @@ context: |
   | Technology                     | Purpose                                           |
   | ------------------------------ | ------------------------------------------------- |
   | **Docker Compose**             | Local PostgreSQL for Hyperdrive development       |
-  | **Wrangler**                   | 4.90+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
+  | **Wrangler**                   | 4.98+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
   | **Angular SSR**                | `@angular/ssr` with `AngularAppEngine` on Cloudflare Workers |
 
   ---
@@ -677,7 +677,7 @@ context: |
 
   - Configured via Cloudflare `RateLimit` bindings in `wrangler.jsonc`
   - Two tiers typically: `LONG_RATE_LIMITER` (100 req/60s) and `SHORT_RATE_LIMITER` (20 req/10s)
-  - Applied via `hono-rate-limiter` middleware with `cf-connecting-ip` key
+  - Applied via custom middleware with `cf-connecting-ip` key
 
   ### Secure Headers
 

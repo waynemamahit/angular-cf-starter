@@ -1,6 +1,6 @@
 # Angular Cloudflare Starter
 
-A production-ready full-stack starter template built on **Angular 21** with **Cloudflare Workers**. Features SSR via `@angular/ssr`, comprehensive Cloudflare service integrations, clean architecture following SOLID principles, and specification-driven development with OpenSpec.
+A production-ready full-stack starter template built on **Angular 22** with **Cloudflare Workers**. Features SSR via `@angular/ssr`, comprehensive Cloudflare service integrations, clean architecture following SOLID principles, and specification-driven development with OpenSpec.
 
 > **Full Project Specification:** See [`openspec/config.yaml`](./openspec/config.yaml) for complete technical requirements, architecture patterns, and coding conventions.
 
@@ -8,7 +8,7 @@ A production-ready full-stack starter template built on **Angular 21** with **Cl
 
 ### Frontend
 
-- **Angular 21+** — Standalone components, signals, `input()`/`output()`, `OnPush` change detection, SSR
+- **Angular 22+** — Standalone components, signals, `input()`/`output()`, `OnPush` change detection, SSR
 - **Angular Router** — Lazy-loaded routes, guards, resolvers
 - **Angular Forms** — Reactive forms with signals
 - **TypeScript 6.0+** — Strict type safety, **no `any` type allowed**
@@ -25,7 +25,7 @@ A production-ready full-stack starter template built on **Angular 21** with **Cl
 - **i18next** — Backend internationalization with Hono integration
 - **CSRF Protection** — Hono `csrf()` middleware for all mutation endpoints
 - **CORS Protection** — Configurable origins via `wrangler.jsonc` variables
-- **Rate Limiting** — Edge-native via Cloudflare `RateLimit` bindings with `hono-rate-limiter`
+- **Rate Limiting** — Edge-native via Cloudflare `RateLimit` bindings
 - **Secure Headers** — CSP, X-Frame-Options, etc. via `hono/secure-headers`
 - **Logger Service** — Centralized logging with correlation ID and sensitive data sanitization
 - **Global Error Handling** — Automatic error catching and logging for production debugging
@@ -93,9 +93,9 @@ Before starting, ensure you have the following installed:
 | Tool             | Version | Purpose                         |
 | ---------------- | ------- | ------------------------------- |
 | **Node.js**      | 24+ LTS | JavaScript runtime              |
-| **PNPM**         | 10+     | Package manager                 |
+| **PNPM**         | 11+     | Package manager                 |
 | **Docker**       | Latest  | Local PostgreSQL for Hyperdrive |
-| **Wrangler CLI** | 4.90+   | Cloudflare deployments          |
+| **Wrangler CLI** | 4.98+   | Cloudflare deployments          |
 | **Git**          | Latest  | Version control                 |
 
 ### Install Global Tools
@@ -130,7 +130,7 @@ pnpm install
 
 This installs all project dependencies including:
 
-- Angular 21, TypeScript 6.0+
+- Angular 22, TypeScript 6.0+
 - TailwindCSS 4+, DaisyUI, Lucide Angular
 - Hono, Drizzle ORM, Zod
 - Vitest, Playwright
