@@ -40,8 +40,8 @@ context: |
   | **Angular Forms**         | 22+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
   | **TailwindCSS**           | 4.3+     | Utility-first CSS with mobile-first responsive design          |
   | **DaisyUI**               | 5.5+     | UI components with customizable themes (default: **light**)    |
-  | **Lucide Angular**        | 1.0+     | `lucide-angular` for UI icons                                  |
-  | **angular-i18next**       | 20+      | Frontend internationalization ([i18n ref](https://angular.dev/guide/i18n)) |
+  | **Lucide Angular**        | 1.21+    | `@lucide/angular` for UI icons                                 |
+  | **angular-i18next**       | 21+      | Frontend internationalization ([i18n ref](https://angular.dev/guide/i18n)) |
   | **i18next**               | 26+      | Core i18n library shared with backend                          |
 
   ### Backend
@@ -59,10 +59,10 @@ context: |
 
   | Technology                    | Version  | Purpose                                                      |
   | ----------------------------- | -------- | ------------------------------------------------------------ |
-  | **Vitest**                    | 4.0+     | Built-in Angular unit/integration testing via `@angular/build:unit-test` |
-  | **@vitest/browser-playwright**| 4.0+     | Browser-based component testing provider                     |
-  | **@vitest/coverage-v8**       | 4.0+     | Coverage provider with 90% threshold enforcement             |
-  | **Playwright**                | 1.59+    | End-to-end testing across browsers                           |
+  | **Vitest**                    | 4.1+     | Built-in Angular unit/integration testing via `@angular/build:unit-test` |
+  | **@vitest/browser-playwright**| 4.1+     | Browser-based component testing provider                     |
+  | **@vitest/coverage-v8**       | 4.1+     | Coverage provider with 90% threshold enforcement             |
+  | **Playwright**                | 1.61+    | End-to-end testing across browsers                           |
   | **jsdom**                     | 29+      | DOM environment for Vitest tests                             |
 
   ### Cloudflare Services
@@ -84,7 +84,7 @@ context: |
   | Technology                     | Purpose                                           |
   | ------------------------------ | ------------------------------------------------- |
   | **Docker Compose**             | Local PostgreSQL for Hyperdrive development       |
-  | **Wrangler**                   | 4.98+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
+  | **Wrangler**                   | 4.103+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
   | **Angular SSR**                | `@angular/ssr` with `AngularAppEngine` on Cloudflare Workers |
 
   ---
@@ -797,7 +797,7 @@ context: |
 
   - Built into the main layout component (visible on all pages, in `src/app/components/layout/`)
   - **Theme selector**: DaisyUI theme switcher using `data-theme` attribute on `<html>`
-  - **Language selector**: i18next language switch with icons (`lucide-angular`)
+  - **Language selector**: i18next language switch with icons (`@lucide/angular`)
   - **Persistence**: localStorage for theme, localStorage + cookie for language
   - **Accessible**: Keyboard-navigable dropdowns with ARIA attributes
   - **Default theme**: `light` (set via `--default` flag in DaisyUI config)

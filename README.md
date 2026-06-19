@@ -15,7 +15,7 @@ A production-ready full-stack starter template built on **Angular 22** with **Cl
 - **TailwindCSS 4.3+** — Utility-first CSS with mobile-first responsive design
 - **Semantic HTML & ARIA** — AXE-compliant accessibility, skip links, keyboard nav, focus management
 - **DaisyUI 5.5+** — UI components with customizable themes (default: **light**)
-- **Lucide Angular** — Icon library (`lucide-angular`)
+- **Lucide Angular** — Icon library (`@lucide/angular`)
 - **angular-i18next** — Frontend internationalization with centralized translation files
 - **Form Layouts** — Following [TailwindCSS form layouts](https://tailwindcss.com/plus/ui-blocks/application-ui/forms/form-layouts)
 
@@ -42,7 +42,7 @@ A production-ready full-stack starter template built on **Angular 22** with **Cl
 
 ### Testing
 
-- **Vitest 4.0+** — Built-in Angular unit + integration testing via `@angular/build:unit-test`
+- **Vitest 4.1+** — Built-in Angular unit + integration testing via `@angular/build:unit-test`
 - **Angular TestBed** — Component testing with `@vitest/browser-playwright`
 - **Playwright** — End-to-end testing across browsers (`from Playwright-E2E` prefix enforced)
 - **90%+ Coverage** — Minimum coverage (statements, branches, functions, lines) enforced by v8
@@ -95,7 +95,7 @@ Before starting, ensure you have the following installed:
 | **Node.js**      | 24+ LTS | JavaScript runtime              |
 | **PNPM**         | 11+     | Package manager                 |
 | **Docker**       | Latest  | Local PostgreSQL for Hyperdrive |
-| **Wrangler CLI** | 4.98+   | Cloudflare deployments          |
+| **Wrangler CLI** | 4.103+  | Cloudflare deployments          |
 | **Git**          | Latest  | Version control                 |
 
 ### Install Global Tools
