@@ -24,11 +24,11 @@ context: |
 
   | Category              | Technology    | Version  | Purpose                                      |
   | --------------------- | ------------- | -------- | -------------------------------------------- |
-  | **Runtime**           | Node.js       | 24+ LTS  | JavaScript runtime                           |
+  | **Runtime**           | Node.js       | 24.18+   | JavaScript runtime                           |
   | **Package Manager**   | PNPM          | 11+      | Fast, efficient dependency management        |
   | **Language**          | TypeScript    | 6.0+     | Type safety, **no `any` type allowed**       |
   | **Linting**           | ESLint        | 10+      | Code quality and Angular-specific rules      |
-  | **Formatting**        | Prettier      | 3.8+     | Consistent code formatting                   |
+  | **Formatting**        | Prettier      | 3.9+     | Consistent code formatting                   |
   | **Build Tool**        | Angular CLI   | 22+      | Build, serve, and test with `@angular/build` |
 
   ### Frontend
@@ -39,8 +39,8 @@ context: |
   | **Angular Router**        | 22+      | Lazy-loaded routes, guards, resolvers ([testing](https://angular.dev/guide/routing/testing#best-practices-for-router-testing), [resolvers](https://angular.dev/guide/routing/data-resolvers#best-practices)) |
   | **Angular Forms**         | 22+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
   | **TailwindCSS**           | 4.3+     | Utility-first CSS with mobile-first responsive design          |
-  | **DaisyUI**               | 5.5+     | UI components with customizable themes (default: **light**)    |
-  | **Lucide Angular**        | 1.21+    | `@lucide/angular` for UI icons                                 |
+  | **DaisyUI**               | 5.6+     | UI components with customizable themes (default: **light**)    |
+  | **Lucide Angular**        | 1.23+    | `@lucide/angular` for UI icons                                 |
   | **angular-i18next**       | 21+      | Frontend internationalization ([i18n ref](https://angular.dev/guide/i18n)) |
   | **i18next**               | 26+      | Core i18n library shared with backend                          |
 
@@ -84,7 +84,7 @@ context: |
   | Technology                     | Purpose                                           |
   | ------------------------------ | ------------------------------------------------- |
   | **Docker Compose**             | Local PostgreSQL for Hyperdrive development       |
-  | **Wrangler**                   | 4.103+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
+  | **Wrangler**                   | 4.106+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
   | **Angular SSR**                | `@angular/ssr` with `AngularAppEngine` on Cloudflare Workers |
 
   ---
@@ -676,7 +676,7 @@ context: |
   ### Rate Limiting
 
   - Configured via Cloudflare `RateLimit` bindings in `wrangler.jsonc`
-  - Two tiers typically: `LONG_RATE_LIMITER` (100 req/60s) and `SHORT_RATE_LIMITER` (20 req/10s)
+  - Two tiers typically: `LONG_RATE_LIMITER` (1000 req/60s) and `SHORT_RATE_LIMITER` (200 req/10s)
   - Applied via custom middleware with `cf-connecting-ip` key
 
   ### Secure Headers
