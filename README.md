@@ -14,14 +14,14 @@ A production-ready full-stack starter template built on **Angular 22** with **Cl
 - **TypeScript 6.0+** — Strict type safety, **no `any` type allowed**
 - **TailwindCSS 4.3+** — Utility-first CSS with mobile-first responsive design
 - **Semantic HTML & ARIA** — AXE-compliant accessibility, skip links, keyboard nav, focus management
-- **DaisyUI 5.6+** — UI components with customizable themes (default: **light**)
-- **Lucide Angular 1.23+** — Icon library (`@lucide/angular`)
+- **DaisyUI 5.7+** — UI components with customizable themes (default: **light**)
+- **Lucide Angular 1.31+** — Icon library (`@lucide/angular`)
 - **angular-i18next** — Frontend internationalization with centralized translation files
 - **Form Layouts** — Following [TailwindCSS form layouts](https://tailwindcss.com/plus/ui-blocks/application-ui/forms/form-layouts)
 
 ### Backend
 
-- **Hono 4.12+** — Fast, edge-native API framework with SOLID principles
+- **Hono 4.13+** — Fast, edge-native API framework with SOLID principles
 - **i18next** — Backend internationalization with Hono integration
 - **CSRF Protection** — Hono `csrf()` middleware for all mutation endpoints
 - **CORS Protection** — Configurable origins via `wrangler.jsonc` variables
@@ -92,10 +92,10 @@ Before starting, ensure you have the following installed:
 
 | Tool             | Version | Purpose                         |
 | ---------------- | ------- | ------------------------------- |
-| **Node.js**      | 24.18+  | JavaScript runtime              |
+| **Node.js**      | 24.19+  | JavaScript runtime              |
 | **PNPM**         | 11+     | Package manager                 |
 | **Docker**       | Latest  | Local PostgreSQL for Hyperdrive |
-| **Wrangler CLI** | 4.106+  | Cloudflare deployments          |
+| **Wrangler CLI** | 4.122+  | Cloudflare deployments          |
 | **Git**          | Latest  | Version control                 |
 
 ### Install Global Tools

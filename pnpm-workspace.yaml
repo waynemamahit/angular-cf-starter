@@ -3,16 +3,7 @@ allowBuilds:
   esbuild: true
   lmdb: true
   msgpackr-extract: true
-  sharp: true
   workerd: true
 minimumReleaseAgeExclude:
-  - '@angular/common@22.0.5'
-  - '@angular/compiler-cli@22.0.5'
-  - '@angular/compiler@22.0.5'
-  - '@angular/core@22.0.5'
-  - '@angular/forms@22.0.5'
-  - '@angular/localize@22.0.5'
-  - '@angular/platform-browser@22.0.5'
-  - '@angular/platform-server@22.0.5'
-  - '@angular/router@22.0.5'
-  - daisyui@5.6.10
+  - miniflare@5.20260811.0-alpha
+  - wrangler@4.122.0
