@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "angular-cf-starter",
+  "name": "angular-cf-starter-staging",
   "compatibility_date": "2026-08-28",
   "compatibility_flags": ["nodejs_compat"],
   "main": "dist/server/server.mjs",
@@ -45,7 +45,7 @@
   "d1_databases": [
     {
       "binding": "D1",
-      "database_name": "production_db",
+      "database_name": "staging_db",
       "database_id": "${D1_DB_ID}"
     }
   ],
