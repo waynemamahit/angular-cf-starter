@@ -15,7 +15,7 @@ A production-ready full-stack starter template built on **Angular 22** with **Cl
 - **TailwindCSS 4.3+** — Utility-first CSS with mobile-first responsive design
 - **Semantic HTML & ARIA** — AXE-compliant accessibility, skip links, keyboard nav, focus management
 - **DaisyUI 5.7+** — UI components with customizable themes (default: **light**)
-- **Lucide Angular 1.31+** — Icon library (`@lucide/angular`)
+- **Lucide Angular 1.38+** — Icon library (`@lucide/angular`)
 - **angular-i18next** — Frontend internationalization with centralized translation files
 - **Form Layouts** — Following [TailwindCSS form layouts](https://tailwindcss.com/plus/ui-blocks/application-ui/forms/form-layouts)
 
@@ -92,10 +92,10 @@ Before starting, ensure you have the following installed:
 
 | Tool             | Version | Purpose                         |
 | ---------------- | ------- | ------------------------------- |
-| **Node.js**      | 24.19+  | JavaScript runtime              |
+| **Node.js**      | 24.20+  | JavaScript runtime              |
 | **PNPM**         | 11+     | Package manager                 |
 | **Docker**       | Latest  | Local PostgreSQL for Hyperdrive |
-| **Wrangler CLI** | 4.122+  | Cloudflare deployments          |
+| **Wrangler CLI** | 4.127+  | Cloudflare deployments          |
 | **Git**          | Latest  | Version control                 |
 
 ### Install Global Tools

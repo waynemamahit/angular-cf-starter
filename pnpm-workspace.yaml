@@ -5,5 +5,18 @@ allowBuilds:
   msgpackr-extract: true
   workerd: true
 minimumReleaseAgeExclude:
-  - miniflare@5.20260811.0-alpha
-  - wrangler@4.122.0
+  - '@hono/zod-validator@0.9.1'
+  - '@lucide/angular@1.38.0'
+  - '@typescript-eslint/eslint-plugin@8.69.0'
+  - '@typescript-eslint/parser@8.69.0'
+  - '@typescript-eslint/project-service@8.69.0'
+  - '@typescript-eslint/scope-manager@8.69.0'
+  - '@typescript-eslint/tsconfig-utils@8.69.0'
+  - '@typescript-eslint/type-utils@8.69.0'
+  - '@typescript-eslint/types@8.69.0'
+  - '@typescript-eslint/typescript-estree@8.69.0'
+  - '@typescript-eslint/utils@8.69.0'
+  - '@typescript-eslint/visitor-keys@8.69.0'
+  - typescript-eslint@8.69.0
+  - daisyui@5.7.23
+  - i18next@26.4.1

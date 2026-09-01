@@ -24,7 +24,7 @@ context: |
 
   | Category              | Technology    | Version  | Purpose                                      |
   | --------------------- | ------------- | -------- | -------------------------------------------- |
-  | **Runtime**           | Node.js       | 24.19+   | JavaScript runtime                           |
+  | **Runtime**           | Node.js       | 24.20+   | JavaScript runtime                           |
   | **Package Manager**   | PNPM          | 11+      | Fast, efficient dependency management        |
   | **Language**          | TypeScript    | 6.0+     | Type safety, **no `any` type allowed**       |
   | **Linting**           | ESLint        | 10+      | Code quality and Angular-specific rules      |
@@ -40,7 +40,7 @@ context: |
   | **Angular Forms**         | 22+      | Reactive forms with signals ([model design](https://angular.dev/guide/forms/signals/model-design#form-model-best-practices), [async ops](https://angular.dev/guide/forms/signals/async-operations#best-practices)) |
   | **TailwindCSS**           | 4.3+     | Utility-first CSS with mobile-first responsive design          |
   | **DaisyUI**               | 5.7+     | UI components with customizable themes (default: **light**)    |
-  | **Lucide Angular**        | 1.31+    | `@lucide/angular` for UI icons                                 |
+  | **Lucide Angular**        | 1.38+    | `@lucide/angular` for UI icons                                 |
   | **angular-i18next**       | 21+      | Frontend internationalization ([i18n ref](https://angular.dev/guide/i18n)) |
   | **i18next**               | 26+      | Core i18n library shared with backend                          |
 
@@ -84,7 +84,7 @@ context: |
   | Technology                     | Purpose                                           |
   | ------------------------------ | ------------------------------------------------- |
   | **Docker Compose**             | Local PostgreSQL for Hyperdrive development       |
-  | **Wrangler**                   | 4.122+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
+  | **Wrangler**                   | 4.127+, Cloudflare CLI for dev, types, deployment. Config must be testable locally. |
   | **Angular SSR**                | `@angular/ssr` with `AngularAppEngine` on Cloudflare Workers |
 
   ---
