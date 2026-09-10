@@ -5,18 +5,30 @@ allowBuilds:
   msgpackr-extract: true
   workerd: true
 minimumReleaseAgeExclude:
-  - '@hono/zod-validator@0.9.1'
-  - '@lucide/angular@1.38.0'
-  - '@typescript-eslint/eslint-plugin@8.69.0'
-  - '@typescript-eslint/parser@8.69.0'
-  - '@typescript-eslint/project-service@8.69.0'
-  - '@typescript-eslint/scope-manager@8.69.0'
-  - '@typescript-eslint/tsconfig-utils@8.69.0'
-  - '@typescript-eslint/type-utils@8.69.0'
-  - '@typescript-eslint/types@8.69.0'
-  - '@typescript-eslint/typescript-estree@8.69.0'
-  - '@typescript-eslint/utils@8.69.0'
-  - '@typescript-eslint/visitor-keys@8.69.0'
-  - typescript-eslint@8.69.0
-  - daisyui@5.7.23
-  - i18next@26.4.1
+  - '@angular-devkit/architect@0.2201.8'
+  - '@angular-devkit/core@22.1.8'
+  - '@angular-devkit/schematics@22.1.8'
+  - '@angular/build@22.1.8'
+  - '@angular/cli@22.1.8'
+  - '@angular/common@22.1.6'
+  - '@angular/compiler-cli@22.1.6'
+  - '@angular/compiler@22.1.6'
+  - '@angular/core@22.1.6'
+  - '@angular/forms@22.1.6'
+  - '@angular/localize@22.1.6'
+  - '@angular/platform-browser@22.1.6'
+  - '@angular/platform-server@22.1.6'
+  - '@angular/router@22.1.6'
+  - '@angular/ssr@22.1.8'
+  - '@cloudflare/workerd-darwin-64@1.20260910.1'
+  - '@cloudflare/workerd-darwin-arm64@1.20260910.1'
+  - '@cloudflare/workerd-linux-64@1.20260910.1'
+  - '@cloudflare/workerd-linux-arm64@1.20260910.1'
+  - '@cloudflare/workerd-windows-64@1.20260910.1'
+  - '@lucide/angular@1.44.0'
+  - '@schematics/angular@22.1.8'
+  - daisyui@5.7.34
+  - miniflare@5.20260910.0-alpha
+  - workerd@1.20260910.1
+  - wrangler@4.131.0
+  - zod@4.6.1
